@@ -27,12 +27,12 @@ def store_detections(frame_number, person_count, timestamp):
 
 # Main function for processing RTSP stream
 def main():
-    # Load the YOLOv8 large model
-    model = YOLO('yolov8m.pt')  # Pre-trained YOLOv8 large model
+    # Load the YOLOv8 Small model
+    model = YOLO('yolov8s.pt')  # Pre-trained YOLOv8 Small model
 
     # Database setup
     setup_database()
-
+# This part of the code has been disabled to stop it from saving the frames due to privacy reasons.
     # Create the output directory if it doesn't exist
     # output_dir = r"E:\YOLOv8\saved_data"
     # os.makedirs(output_dir, exist_ok=True)
